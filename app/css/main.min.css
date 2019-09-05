@@ -7885,7 +7885,8 @@ h1, h2, h3, h4, h5, h6 {
   .header--color {
     background-image: url("../img/body-back.jpg") !important; }
   .header--scrolled {
-    background-image: url("../img/main-back.jpg"); }
+    background-image: url("../img/main-back.jpg");
+    background-repeat: no-repeat; }
     .header--scrolled .main-menu ul li a {
       color: #fff; }
     .header--scrolled .header .logo2 {

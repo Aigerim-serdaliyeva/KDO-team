@@ -1,6 +1,5 @@
 @import './base';
 
-
 .page-wrapper {
   overflow: hidden;
   min-height: 100vh;
@@ -95,6 +94,7 @@
 
   &--scrolled {
     background-image: url('../img/main-back.jpg');
+    background-repeat: no-repeat;
     .main-menu {
       ul li a {
         color: #fff;

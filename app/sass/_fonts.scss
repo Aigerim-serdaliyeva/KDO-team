@@ -1,0 +1,7 @@
+@import "_mixins/font-face";
+
+@include font-face ("OpenSans", "../fonts/OpenSans/Regular/OpenSans-Regular", normal);
+@include font-face ("OpenSans", "../fonts/OpenSans/Bold/OpenSans-Bold", bold);
+@include font-face ("OpenSans", "../fonts/OpenSans/SemiBold/OpenSans-SemiBold", 600);
+@include font-face ("mr_DetectivesIncG", "../fonts/mr_DetectivesIncG/Regular/mr_DetectivesIncG", normal);
+@include font-face ("Roboto", "../fonts/Roboto/Light/Roboto-Light", 300);

@@ -180,6 +180,10 @@ $(document).ready(function () {
     $(this).closest('.header-burger').removeClass('burger-menu--scrolled');
   })
 
+  $('.work').click( function() {
+    $(this).find('.work__block').toggleClass('flex');
+  })
+
 
   $(".s-map__button").click( function() {
     $(this).closest('.s-map').addClass('show-map');

@@ -7837,7 +7837,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
     position: relative;
     margin-left: 6px;
-    padding-left: 13px; }
+    padding-left: 10px; }
     .header__title span {
       display: block; }
     .header__title::before, .header__title::after {
@@ -8121,8 +8121,14 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   border-radius: 10px;
   margin-bottom: 10px;
-  overflow: hidden; }
+  overflow: hidden;
+  cursor: pointer; }
+  .s-work .work:hover .work__img, .s-work .work.active .work__img {
+    -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+            transform: scale(1.01); }
   .s-work .work__block {
+    display: none;
     background: rgba(22, 22, 22, 0.9);
     border-radius: 10px;
     position: absolute;
@@ -8130,10 +8136,6 @@ h1, h2, h3, h4, h5, h6 {
     right: 0;
     bottom: 0;
     left: 0;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -8142,16 +8144,31 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 30px; }
+    .s-work .work__block.flex {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+  .s-work .work__img {
+    -webkit-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s; }
   .s-work .work__title {
     font-size: 64px;
-    margin-top: 50%;
     text-align: center; }
     .s-work .work__title span {
       color: #FFCC00; }
   .s-work .work__text {
-    text-align: center; }
+    text-align: center;
+    margin-top: 15px; }
   .s-work .work__footer {
+    position: absolute;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -8162,9 +8179,19 @@ h1, h2, h3, h4, h5, h6 {
             justify-content: space-between;
     max-width: 310px;
     width: 100%;
-    margin-bottom: 30px; }
+    bottom: 30px; }
   .s-work .work__data span {
     color: #FFCC00; }
+  .s-work .work__site {
+    position: relative;
+    padding-left: 22px; }
+    .s-work .work__site::before {
+      content: "";
+      position: absolute;
+      width: 17px;
+      height: 17px;
+      background-image: url("../img/circle-site.png");
+      left: 0; }
 
 .s-partners .section-title {
   font-size: 150px;

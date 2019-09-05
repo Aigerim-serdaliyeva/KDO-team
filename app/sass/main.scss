@@ -34,7 +34,7 @@
     font-weight: normal;
     position: relative;
     margin-left: 6px;
-    padding-left: 13px;
+    padding-left: 10px;
     span {
       display: block;
     }
@@ -390,8 +390,17 @@
     border-radius: 10px;
     margin-bottom: 10px;
     overflow: hidden;
+    cursor: pointer;    
+
+    &:hover, &.active {
+      .work__img {
+        transform: scale(1.01);
+      }
+    }
+
 
     &__block {
+      display: none;
       background: rgba(22, 22, 22, 0.9);
       border-radius: 10px;
       position: absolute;
@@ -399,14 +408,21 @@
       right: 0;
       bottom: 0;
       left: 0;
-      display: flex;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
+      padding: 30px;
+      &.flex {        
+        display: flex;
+      }
+    }
+
+    &__img {        
+      transition: all .3s;
     }
 
     &__title {
       font-size: 64px;
-      margin-top: 50%;
       text-align: center;
       span {
         color: $accent;
@@ -415,19 +431,34 @@
 
     &__text {
       text-align: center;
+      margin-top: 15px;
     }
 
     &__footer {
+      position: absolute;
       display: flex;
       justify-content: space-between;
       max-width: 310px;
       width: 100%;
-      margin-bottom: 30px;
+      bottom: 30px;
     }
 
     &__data {
       span {
         color: $accent;
+      }
+    }
+
+    &__site {
+      position: relative;
+      padding-left: 22px;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 17px;
+        height: 17px;
+        background-image: url("../img/circle-site.png");
+        left: 0;
       }
     }
   }

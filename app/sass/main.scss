@@ -3,16 +3,17 @@
 .page-wrapper {
   overflow: hidden;
   min-height: 100vh;
-  background-image: url("../img/body-back.jpg");
-  background-size: cover;
+  background-image: url("../img/main-back.jpg");
+  background-repeat: repeat;
+  background-size: auto;
   display: flex;
   flex-direction: column;
 }
 
 .contact-page {
-  background-image: url("../img/contact-back-figure.png");
+  background-image: url("../img/main-back.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-size: cover;
 }
 
 .w-100 {
@@ -56,6 +57,7 @@
 
   &__aside {
     display: flex;
+    align-items: center;
   }
 
   &-burger {
@@ -193,7 +195,8 @@
 
 .main-menu {  
   max-width: 901px;
-  width: 100%;  
+  width: 100%; 
+  margin-bottom: 20px; 
   ul {
     list-style: none;
     display: flex;
@@ -267,7 +270,6 @@
 
 .s-main {
   padding: 370px 0 400px;
-  background-image: url('../img/main-back.jpg');
   text-align: center;
 
   &__title {
@@ -383,9 +385,9 @@
 }
 
 .s-work {
+  padding: 30px 0 150px;
 
   .work {
-    height: 596px;
     position: relative;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -411,7 +413,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      padding: 30px;
+      padding: 20px;
       &.flex {        
         display: flex;
       }
@@ -419,11 +421,38 @@
 
     &__img {        
       transition: all .3s;
+      position: relative;      
+      height: 596px;
+
+      &__content {
+        position: absolute;
+        top: 0;
+        width: auto;
+        height: auto;
+        transition: top 10s ease-out 0s;
+        &:hover {
+          top: -100%;
+        }
+        .work__img__hover {
+          position: absolute;
+          top: 0;
+          width: auto;
+          height: auto;
+          transition: top 12s ease-out 0s;
+          &:hover {
+            top: -100%;
+          }
+        }
+      }
     }
 
     &__title {
       font-size: 64px;
+      text-transform: uppercase;
+      font-family: Druk, serif;
+      font-weight: bold;
       text-align: center;
+      letter-spacing: -0.5px;
       span {
         color: $accent;
       }
@@ -486,24 +515,42 @@
 }
 
 .s-brif {
-  padding: 170px 0 50px;
+  background: #fff;
+  padding: 40px 0;  
+
+  &__content {
+    max-width: 700px;
+    padding: 20px 0 30px;
+    margin: 0 auto;
+    background: $accent;
+    position: relative;
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      background: $accent;
+      top: 0;
+      bottom: 0;
+    }
+    &::before {
+      left: -1000px;
+      right: 100%;
+    }
+    &::after {
+      right: -1000px;
+      left: 100%;
+    }
+  }
 
   &__text {
-    font-size: 36px;
-    font-weight: 600;
-    text-align: center;
-    max-width: 859px;
-    margin: 0 auto 30px;
-    padding: 0 15px;
+    font-size: 14px;
+    color: #fff;
   }
 
   &__title {
     color: #2D2D2D;
     font-family: mr_DetectivesIncG, serif;
-    font-size: 150px;
+    font-size: 149px;
     text-align: center;
-    background: $accent;
-    padding: 40px 0;
     display: block;
 
     img {
@@ -540,7 +587,7 @@
   
   &__content {
     display: flex;
-    margin-left: 60px;
+    margin-left: 140px;
   }
 
   &__info {
@@ -550,9 +597,9 @@
   }
 
   .contact {
-    max-width: 170px;
+    max-width: 230px;
     width: 100%;
-    margin-right: 40px;
+    margin-right: 60px;
     &:last-child {
       margin-right: 0;
     }
@@ -577,7 +624,10 @@
     }
 
     &__text {
-      margin: 0 auto 20px 25px;
+      margin: 0 auto 12px;
+      &--email {
+        margin-left: 20px;
+      }
       img {
         width: 16px;
         margin-right: 5px;
@@ -767,6 +817,7 @@
 
 .s-map {
   position: relative;
+  padding: 100px 0 200px;
   z-index: 0;
   .map-mobile {
     display: none;

@@ -184,6 +184,12 @@ $(document).ready(function () {
     $(this).find('.work__block').toggleClass('flex');
   })
 
+  $('.work').hover( function() {
+    if ($('.work__img').height() !== '596px') {
+      $(this).find('.work__content').addClass('.work__img__hover');
+    }
+  })
+
 
   $(".s-map__button").click( function() {
     $(this).closest('.s-map').addClass('show-map');

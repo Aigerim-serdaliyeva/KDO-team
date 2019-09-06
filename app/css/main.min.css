@@ -349,9 +349,9 @@ html {
   @media (min-width: 1200px) {
     .container {
       max-width: 1140px; } }
-  @media (min-width: 1360px) {
+  @media (min-width: 1650px) {
     .container {
-      max-width: 1300px; } }
+      max-width: 1500px; } }
   @media (min-width: 1920px) {
     .container {
       max-width: 1590px; } }
@@ -1648,7 +1648,7 @@ html {
   .offset-xl-15 {
     margin-left: 93.75%; } }
 
-@media (min-width: 1360px) {
+@media (min-width: 1650px) {
   .col-xxl {
     -webkit-flex-basis: 0;
         -ms-flex-preferred-size: 0;
@@ -2267,7 +2267,7 @@ html {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important; } }
 
-@media (min-width: 1360px) {
+@media (min-width: 1650px) {
   .d-xxl-none {
     display: none !important; }
   .d-xxl-inline {
@@ -3182,7 +3182,7 @@ html {
                 -ms-grid-row-align: stretch !important;
             align-self: stretch !important; } }
 
-@media (min-width: 1360px) {
+@media (min-width: 1650px) {
   .flex-xxl-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -4862,7 +4862,7 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
-@media (min-width: 1360px) {
+@media (min-width: 1650px) {
   .m-xxl-0 {
     margin: 0 !important; }
   .mt-xxl-0,
@@ -6728,7 +6728,7 @@ html {
   .mx-xl-auto {
     margin-left: auto !important; } }
 
-@media (min-width: 1360px) {
+@media (min-width: 1650px) {
   .m-xxl-0 {
     margin: 0 !important; }
   .mt-xxl-0,
@@ -7373,7 +7373,7 @@ html {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important; } }
 
-@media (min-width: 1360px) {
+@media (min-width: 1650px) {
   .d-xxl-none {
     display: none !important; }
   .d-xxl-inline {
@@ -7835,6 +7835,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   position: fixed;
+  background-image: url("../img/main-back.jpg");
   top: 0;
   width: 100%;
   z-index: 98;
@@ -8000,7 +8001,9 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom: 1px solid transparent;
     font-size: 18px;
     line-height: 25px;
-    padding: 6px 18px; }
+    padding: 6px 18px;
+    min-width: 146px;
+    text-align: center; }
     .main-menu a.inverse {
       color: #fff; }
 

@@ -22,6 +22,7 @@
 
 .header {
   position: fixed;
+  background-image: url('../img/main-back.jpg');
   // display: none;
   top: 0;
   width: 100%;
@@ -225,6 +226,8 @@
     font-size: 18px;
     line-height: 25px; 
     padding: 6px 18px;
+    min-width: 146px;
+    text-align: center;
     &.inverse {
       color: #fff;
     }
@@ -403,6 +406,7 @@
 
     &__block {
       display: none;
+      // display: flex;
       background: rgba(22, 22, 22, 0.9);
       border-radius: 10px;
       position: absolute;

@@ -21,6 +21,8 @@ $(document).ready(function () {
   if ($wnd.width() < 992) {
     headerHeight = 60;
   }
+  
+  new WOW().init();
 
   // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
   if ($wnd.width() > 479) {

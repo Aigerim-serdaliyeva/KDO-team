@@ -194,13 +194,38 @@ $(document).ready(function () {
 
   $('.work').click( function() {
     $(this).find('.work__block').toggleClass('flex');
+    $(this).find('.work__img__content').stop();
   })
 
-  $('.work').hover( function() {
-    if ($('.work__img').height() !== '596px') {
-      $(this).find('.work__content').addClass('.work__img__hover');
+  const spp = 4; // 1000ms / 100px
+
+  $('.work').mouseenter( function() {
+    const $workImg = $(this).find('.work__img');
+    const $content = $(this).find('.work__img__content');
+    if (!$content || !$content.length) {
+      return;
     }
-  })
+    const height = $workImg.height();
+    const contentHeight = $content.height();
+    if (contentHeight > height) {
+      const top = contentHeight - height;
+      const distance = top - (-$content.position().top);
+      $content.stop().animate({
+        'top': -top
+      }, spp * distance);
+    }
+  });
+
+  $('.work').mouseleave( function() {
+    const $content = $(this).find('.work__img__content');
+    if (!$content || !$content.length) {
+      return;
+    }
+    const height = 0 - $content.position().top;
+    $content.stop().animate({
+      'top': 0
+    }, spp * height);
+  });
 
 
   $(".s-map__button").click( function() {

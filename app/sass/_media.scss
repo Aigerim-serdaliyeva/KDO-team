@@ -3,7 +3,7 @@
 
 /*==========  Desktop First  ==========*/
 
-@media (max-width: 1500px) {
+@media (max-width: 1690px) {
   .s {
 
     &-main {
@@ -12,6 +12,9 @@
 
     &-work {
       .work {
+        &__img {
+          height: 400px;
+        }
       }
     }
 
@@ -121,6 +124,14 @@
   }
 
   .s {
+
+    &-work {
+      .work {
+        &__img {
+          height: 350px;
+        }
+      }
+    }
 
     &-contact {
       .logo {

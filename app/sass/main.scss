@@ -70,9 +70,17 @@
 
   &--opened {
     left: 0 !important;
+    background-image: url('../img/main-back.jpg');
+    background-repeat: repeat;
 
     .burger-menu__close {
       display: block;
+    }
+
+    .header {
+      &__title {
+        display: none;
+      }
     }
   }
 
@@ -293,7 +301,8 @@
   .work {
     position: relative;
     border-radius: 10px;
-    margin-bottom: 10px;
+    max-width: 390px;
+    margin: 0 auto 10px;
     overflow: hidden;
     cursor: pointer;    
 
@@ -331,22 +340,6 @@
       &__content {
         position: absolute;
         top: 0;
-        width: auto;
-        height: auto;
-        transition: top 10s ease-out 0s;
-        &:hover {
-          top: -100%;
-        }
-        .work__img__hover {
-          position: absolute;
-          top: 0;
-          width: auto;
-          height: auto;
-          transition: top 12s ease-out 0s;
-          &:hover {
-            top: -100%;
-          }
-        }
       }
     }
 

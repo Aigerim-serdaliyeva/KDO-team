@@ -65,13 +65,14 @@ gulp.task('main-js', function () {
 
 gulp.task('libs-js', function () {
   return gulp.src([
+    'node_modules/gsap/src/minified/TweenMax.min.js',   
+   'node_modules/gsap/src/minified/TimelineLite.min.js',  
    'node_modules/jquery/dist/jquery.min.js',
    'node_modules/remodal/dist/remodal.min.js',
    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
    'node_modules/owl.carousel/dist/owl.carousel.min.js',
    'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
-   'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
-  //  'node_modules/wowjs/dist/wow.min.js'
+   'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js'   
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify()) // Минимизировать весь js (на выбор)

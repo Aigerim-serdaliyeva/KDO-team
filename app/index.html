@@ -42,22 +42,43 @@
       <div class="container">
         <div class="header__content">
 
-          <div class="header__aside">
-            <a href="/" class="logo">
-              <img src="./img/logo.png" alt="">
-            </a>
-            <h1 class="header__title inverse" data-wow-duration="2s" >
-              <span>UI/UX Дизайн</span>
-              <span>Разработка Web-сервисов</span>
-              <span>Разработка мобильных игр и приложений</span>
-            </h1>
-          </div>          
+            <div class="header__aside">                       
+                <div class="anim__stage-1">
+                    <div class="anim__logo">
+                        <a href="/" class="logo anim__logo-img">
+                          <img src="./img/KDO.svg" alt="">
+                          <div class="anim__logo-text">
+                              <div class="s-main__title"><span>Make</span> it easy</div>
+                              <a href="#" class="carrow">
+                                <svg>
+                                  <path class="a1" d="M0 0 L12 13 L24 0"></path>
+                                  <path class="a2" d="M0 10 L12 23 L24 10"></path>
+                                  <path class="a3" d="M0 20 L12 33 L24 20"></path>
+                                </svg>
+                              </a>
+                          </div>
+                        </a>
+                        
+                    </div>
+                                        
+                    <div class="anim__header-text">
+                        <h1 class="header__title inverse" data-wow-duration="2s" >
+                            <span>UI/UX Дизайн</span>
+                            <span>Разработка Web-сервисов</span>
+                            <span>Разработка мобильных игр и приложений</span>
+                          </h1>
+                    </div>
+                    
+                </div>
+               
+                
+              </div>      
 
           <div class="grow"></div>
 
           <nav class="main-menu inverse">
             <div class="container">
-              <ul class="navigation">
+              <ul class="navigation anim__navigation">
                 <li class="link">
                   <a href="#work" class="inverse">Все проекты</a>
                 </li>
@@ -89,22 +110,9 @@
       </div>
     </header>
 
-    <section class="section s-main inverse" id="main">
-      <div class="container">
-        <div class="s-main__img">
-          <a href="/" class="logo">
-            <img src="./img/KDO.png" alt="">
-          </a>
-        </div>
-        <div class="s-main__title"><span>Make</span> it easy</div>
-        <a href="#" class="carrow">
-          <svg>
-            <path class="a1" d="M0 0 L12 13 L24 0"></path>
-            <path class="a2" d="M0 10 L12 23 L24 10"></path>
-            <path class="a3" d="M0 20 L12 33 L24 20"></path>
-          </svg>
-        </a>
-      </div>
+    <div id="trigger1" ></div>       
+    <section class="anim__main-container" id="main">
+        
     </section>
 
     <section class="section s-work" id="work">            
@@ -473,9 +481,7 @@
       </div>
     </div>
   </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-  <script src=".js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  
   <script src="./js/libs.min.js"></script>
   <script src="./js/main.min.js"></script>
 </body>

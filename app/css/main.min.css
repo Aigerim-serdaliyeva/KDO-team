@@ -8361,7 +8361,8 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  position: relative; }
 
 .contact-page {
   background-image: url("../img/main-back.jpg");
@@ -8407,7 +8408,19 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0; }
   .header-burger {
     padding: 30px 0;
     position: fixed;
@@ -8452,7 +8465,8 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    position: relative; }
 
 .burger-menu {
   display: none; }
@@ -8509,7 +8523,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-menu {
   max-width: 901px;
   width: 100%;
-  margin-bottom: 20px; }
+  padding: 40px 0 10px; }
   .main-menu ul {
     list-style: none;
     display: -webkit-box;
@@ -8576,6 +8590,107 @@ h1, h2, h3, h4, h5, h6 {
     margin: 10px 0 20px; }
     .s-main__title span {
       color: #FFCC00; }
+
+#trigger1 {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  right: 0;
+  top: 9%; }
+
+.anim__main-container {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.anim__logo {
+  -webkit-transform: translateX(36vw) translateY(40vh);
+      -ms-transform: translateX(36vw) translateY(40vh);
+          transform: translateX(36vw) translateY(40vh);
+  position: relative; }
+
+.anim__logo-img {
+  position: relative; }
+  .anim__logo-img img {
+    display: block;
+    -webkit-transform: scale(2.5);
+        -ms-transform: scale(2.5);
+            transform: scale(2.5); }
+
+.anim__navigation {
+  opacity: 0; }
+
+.anim__header-text {
+  overflow: hidden; }
+  .anim__header-text .header__title {
+    -webkit-transform: translateX(-110%);
+        -ms-transform: translateX(-110%);
+            transform: translateX(-110%); }
+
+.anim__logo-text {
+  position: absolute;
+  top: 200%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  white-space: nowrap; }
+
+.anim__stage-1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.anim__stage-2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 1; }
 
 .s-work {
   padding: 30px 0 150px; }

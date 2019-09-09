@@ -1,3 +1,5 @@
+
+
 $(document).ready(function () {
 
   var $wnd = $(window);
@@ -7,6 +9,64 @@ $(document).ready(function () {
   const $burgerMenu = $('.burger-menu');
   var $menu = $(".main-menu");
   var headerHeight = 82;
+
+  // *** Animation of logo
+  // init controller
+    const controller = new ScrollMagic.Controller();
+
+    const backToPosition = new TimelineMax({
+      ease:Linear.easeNone,
+      paused: true
+    })
+    .to('.anim__logo', 0.6, {
+      transform: '0'      
+    })
+    .to('.anim__logo-img img', 0.6, {
+      transform: '0',        
+    }, 0
+    )
+    .to(
+      '.anim__logo-text', 0.4, {
+        opacity: '0',          
+      },
+      0
+    )
+    .to(
+      '.anim__header-text .header__title', 0.4, {
+        transform: '0'
+      }
+    )    
+    .to(
+      '.anim__navigation', 0.4, {
+        opacity: '1'
+      }
+    )
+    .to(
+      '.anim__main-container',
+      0.6, {
+        height: '30vh'
+      }, 0
+    )
+
+    let toggle = true;
+    const toggleAnim = () => {
+      toggle ? backToPosition.play() : backToPosition.reverse();
+      toggle = !toggle      
+    }
+        
+
+    const scene = new ScrollMagic.Scene({
+      triggerElement: "#trigger1"
+    })
+    .on('progress', () => {
+      toggleAnim()
+    })
+    // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
+    .addTo(controller);
+
+
+  // *** Animation of logo
+
 
   // // create a scene
   // new ScrollMagic.Scene({
@@ -31,8 +91,7 @@ $(document).ready(function () {
   if ($wnd.width() < 992) {
     headerHeight = 60;
   }
-  
-  new WOW().init();
+    
 
   // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
   if ($wnd.width() > 479) {

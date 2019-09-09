@@ -44,7 +44,7 @@ $(document).ready(function () {
     .to(
       '.anim__main-container',
       0.6, {
-        height: '50vh'
+        height: '40vh'
       }, 0
     )
 
@@ -141,6 +141,7 @@ $(document).ready(function () {
       var top = $($href).offset().top - headerHeight;
       $html.stop().animate({ scrollTop: top }, "slow", "swing");
     }
+    closeMenu();
   });
 
   $top.click(function () {

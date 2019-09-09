@@ -8699,7 +8699,7 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 1; }
 
 .s-terms {
-  padding: 100px 0; }
+  padding: 80px 0 50px; }
   .s-terms h2 {
     text-align: center;
     margin-bottom: 30px; }
@@ -8999,7 +8999,7 @@ h1, h2, h3, h4, h5, h6 {
   .s-work .work__block {
     padding: 15px 10px; }
   .s-work .work__img {
-    height: 400px; }
+    height: 470px; }
   .s-brif__title {
     font-size: 140px; }
   .s-contact--title {
@@ -9239,7 +9239,7 @@ h1, h2, h3, h4, h5, h6 {
   .main-menu ul {
     margin-bottom: 50px; }
   .s-work .work__img {
-    height: 400px; }
+    height: 480px; }
   .s-brif__title {
     font-size: 70px; }
     .s-brif__title img {

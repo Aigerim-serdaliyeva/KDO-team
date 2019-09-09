@@ -8965,7 +8965,8 @@ h1, h2, h3, h4, h5, h6 {
       -webkit-box-direction: normal;
       -webkit-flex-direction: column;
           -ms-flex-direction: column;
-              flex-direction: column; }
+              flex-direction: column;
+      padding-top: 30px; }
   .main-menu {
     display: block;
     top: 70px;

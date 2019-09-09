@@ -84,18 +84,15 @@
     }
   }
 
-  .logo-kdo {
-    display: none;
-  }
-
   &__footer {
     text-align: center;
     display: none;
+    margin: 0 auto;
     &__links {
       max-width: 130px;
       display: flex;
       justify-content: space-between;
-      margin: 0 auto 40px; 
+      margin: 0 auto 25px; 
     }
   }
 
@@ -105,20 +102,11 @@
 
   &--scrolled {
     background-image: url('../img/main-back.jpg');
-    background-repeat: no-repeat;
-    .main-menu {
-      ul li a {
-        color: #fff;
-      }
-    }
-    .header {
-      .logo2 {
-        display: none !important;
-      }
-    }
-    &__burger {
-      background-image: none;
-    }
+    // background-repeat: no-repeat;
+    
+    // &__burger {
+    //   background-image: none;
+    // }
   }
 
   &__content {

@@ -71,7 +71,7 @@ gulp.task('libs-js', function () {
    'node_modules/owl.carousel/dist/owl.carousel.min.js',
    'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
    'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
-   'node_modules/wowjs/dist/wow.min.js'
+  //  'node_modules/wowjs/dist/wow.min.js'
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify()) // Минимизировать весь js (на выбор)

@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  &--background {
+    background-image: none;
+  }
 }
 
 .contact-page {
@@ -292,9 +296,7 @@
     span {
       color: $accent;
     }
-  }
-
-  
+  }  
 }
 
 #trigger1 {
@@ -305,7 +307,6 @@
   top: 9%;
   
 }
-
 
 .anim {
   &__main-container {
@@ -358,6 +359,24 @@
       flex-direction: column;
       opacity: 1;
       
+  }
+}
+
+.s-terms {
+  padding: 100px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+
+  ol {
+    margin-bottom: 20px;
   }
 }
 

@@ -44,7 +44,7 @@ $(document).ready(function () {
     .to(
       '.anim__main-container',
       0.6, {
-        height: '30vh'
+        height: '50vh'
       }, 0
     )
 

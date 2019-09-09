@@ -232,9 +232,6 @@ $(document).ready(function () {
   }
 
   $('.burger-menu').click( function() {
-    // $(this).closest('.page-wrapper').find('.header--opened');
-    // $(this).closest('.burger-menu--scrolled').css('background-image', 'none');
-    // $(this).closest('.page-wrapper').find('.header--opened').closest('.header-burger').removeClass('burger-menu--scrolled');
     $(this).closest('.header-burger').removeClass('burger-menu--scrolled');
   })
 

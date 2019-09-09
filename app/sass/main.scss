@@ -109,17 +109,12 @@
     }
   }
 
-  &--color {    
-    background-image: url("../img/body-back.jpg") !important;
-  }
+  // &--color {    
+  //   background-image: url("../img/body-back.jpg") !important;
+  // }
 
   &--scrolled {
     background-image: url('../img/main-back.jpg');
-    // background-repeat: no-repeat;
-    
-    // &__burger {
-    //   background-image: none;
-    // }
   }
 
   &__content {

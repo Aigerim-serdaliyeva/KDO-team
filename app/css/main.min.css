@@ -8453,8 +8453,6 @@ h1, h2, h3, h4, h5, h6 {
           -ms-flex-pack: justify;
               justify-content: space-between;
       margin: 0 auto 25px; }
-  .header--color {
-    background-image: url("../img/body-back.jpg") !important; }
   .header--scrolled {
     background-image: url("../img/main-back.jpg"); }
   .header__content {

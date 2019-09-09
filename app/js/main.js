@@ -8,7 +8,7 @@ $(document).ready(function () {
   var $header = $(".header");
   const $burgerMenu = $('.burger-menu');
   var $menu = $(".main-menu");
-  var headerHeight = 82;
+  var headerHeight = 170;
 
   // *** Animation of logo
   // init controller
@@ -79,15 +79,6 @@ $(document).ready(function () {
     headerHeight = 60;
   }
     
-
-  // jquery.maskedinput для ПК и планшет (мобильном не подключаем)
-  if ($wnd.width() > 479) {
-    $("input[type=tel]").mask("+7 (999) 999 99 99", {
-      completed: function () {
-        $(this).removeClass('error');
-      }
-    });
-  }
 
   $wnd.scroll(function () { onscroll(); });
 
@@ -223,7 +214,7 @@ $(document).ready(function () {
   
   function showMenu() {
     $header.addClass('header--opened');
-    $header.removeClass('header--color');
+    // $header.removeClass('header--color');
     $burgerMenu.addClass('burger-menu--active');
   }
 

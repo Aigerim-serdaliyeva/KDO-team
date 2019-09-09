@@ -592,28 +592,6 @@
   }
 }
 
-.s-thanks {
-  padding: 200px 0 100px 0;
-  flex-grow: 1;
-    
-  &__title {
-    color: $accent;
-    font-size: 48px;
-    font-weight: normal;
-    margin-bottom: 30px;
-  }
-
-  &__text {
-    font-size: 24px;
-    margin: 0 0 125px;
-  }
-
-  &__link {
-    text-decoration: underline;
-    color: $accent;
-  }
-}
-
 .s-map {
   position: relative;
   padding: 100px 0 200px;

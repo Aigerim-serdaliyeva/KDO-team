@@ -8889,24 +8889,6 @@ h1, h2, h3, h4, h5, h6 {
         width: 16px;
         margin-right: 5px; }
 
-.s-thanks {
-  padding: 200px 0 100px 0;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1; }
-  .s-thanks__title {
-    color: #FFCC00;
-    font-size: 48px;
-    font-weight: normal;
-    margin-bottom: 30px; }
-  .s-thanks__text {
-    font-size: 24px;
-    margin: 0 0 125px; }
-  .s-thanks__link {
-    text-decoration: underline;
-    color: #FFCC00; }
-
 .s-map {
   position: relative;
   padding: 100px 0 200px;
@@ -9246,14 +9228,7 @@ h1, h2, h3, h4, h5, h6 {
   .s-contact .logo img {
     max-width: 153px;
     margin: 0 auto;
-    display: block; }
-  .s-thanks {
-    padding: 150px 0 50px; }
-    .s-thanks-title {
-      font-size: 30px; }
-    .s-thanks-text {
-      font-size: 16px;
-      margin-bottom: 40px; } }
+    display: block; } }
 
 /*==========  Mobile First  ==========*/
 @media (min-width: 992px) {

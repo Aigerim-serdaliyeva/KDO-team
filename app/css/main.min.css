@@ -8378,8 +8378,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   width: 100%;
   z-index: 98;
-  padding: 45px 0 30px;
+  padding: 45px 0 40px;
   z-index: 10; }
+  .header .logo {
+    display: none; }
   .header__title {
     font-size: 18px;
     font-weight: normal;
@@ -8580,10 +8582,12 @@ h1, h2, h3, h4, h5, h6 {
       color: #fff; }
 
 .s-main {
-  padding: 370px 0 400px;
-  text-align: center; }
+  padding: 300px 0 300px;
+  text-align: center;
+  display: none; }
   .s-main__title {
     font-size: 24px;
+    color: #fff;
     font-family: Roboto, serif;
     font-weight: 300;
     letter-spacing: 0.25em;
@@ -8995,7 +8999,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1450px) {
   .header {
-    padding: 30px 0 20px; }
+    padding: 30px 0 30px; }
     .header__title {
       font-size: 14px; }
   .main-menu {
@@ -9020,11 +9024,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1199.98px) {
   .header__title {
     font-size: 12px; }
-  .header .logo {
+  .header .logo img {
     max-width: 80px; }
+  .anim__logo-img img {
+    max-width: 70px !important; }
   .main-menu {
     max-width: 600px;
-    margin-bottom: 15px; }
+    padding: 20px 0 0; }
     .main-menu ul li a {
       padding: 3px 10px;
       min-width: 100px; }
@@ -9070,9 +9076,8 @@ h1, h2, h3, h4, h5, h6 {
     .header .logo {
       max-width: 100%;
       display: block;
-      margin: 0 auto; }
-      .header .logo img {
-        text-align: center; }
+      margin: 0 auto;
+      text-align: center; }
     .header__footer {
       display: block; }
     .header__content {
@@ -9082,6 +9087,12 @@ h1, h2, h3, h4, h5, h6 {
           -ms-flex-direction: column;
               flex-direction: column;
       padding-top: 30px; }
+  #trigger1 {
+    display: none; }
+  .anim__stage-1 {
+    display: none; }
+  .anim__main-container {
+    display: none !important; }
   .main-menu {
     display: block;
     top: 70px;
@@ -9103,10 +9114,12 @@ h1, h2, h3, h4, h5, h6 {
           margin: 0; }
         .main-menu ul li a {
           color: #fff; }
+  .s-main {
+    display: block; }
   .s-work .work__img {
     height: 350px; }
   .s-map {
-    padding: 80px 0 100px; }
+    padding: 80px 0 50px; }
   .s-contact .logo {
     display: block;
     margin: 0 auto;

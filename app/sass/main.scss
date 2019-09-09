@@ -28,8 +28,12 @@
   top: 0;
   width: 100%;
   z-index: 98;
-  padding: 45px 0 30px;
+  padding: 45px 0 40px;
   z-index: 10;
+
+  .logo {
+    display: none;
+  }
 
   &__title {
     font-size: 18px;
@@ -274,11 +278,13 @@
 }
 
 .s-main {
-  padding: 370px 0 400px;
+  padding: 300px 0 300px;
   text-align: center;
+  display: none;
 
   &__title {
     font-size: 24px;
+    color: #fff;
     font-family: Roboto, serif;
     font-weight: 300;
     letter-spacing: 0.25em;

@@ -69,7 +69,7 @@
 
 @media (max-width: 1450px) {
   .header {
-    padding: 30px 0 20px;
+    padding: 30px 0 30px;
     &__title {
       font-size: 14px;
     }
@@ -123,13 +123,21 @@
       font-size: 12px;
     }
     .logo {
-      max-width: 80px;
+      img {
+        max-width: 80px;
+      }
+    }
+  }
+
+  .anim__logo-img {
+    img {      
+      max-width: 70px !important;
     }
   }
 
   .main-menu {
     max-width: 600px;
-    margin-bottom: 15px;
+    padding: 20px 0 0;
     ul {
       li {
         a {
@@ -184,13 +192,10 @@
     }
 
     .logo {
-      // max-width: none;
       max-width: 100%;
       display: block;
       margin: 0 auto;
-      img {
-        text-align: center;
-      }
+      text-align: center;
     }
 
     &__footer {
@@ -201,6 +206,18 @@
       padding-top: 30px;
     }
     
+  }
+
+  #trigger1 {
+    display: none;
+  }
+
+  .anim__stage-1 {
+    display: none;
+  }
+
+  .anim__main-container {
+    display: none !important;
   }
 
 	.main-menu {
@@ -239,6 +256,10 @@
 
   .s {
 
+    &-main {
+      display: block;
+    }
+
     &-work {
       .work {
         &__img {
@@ -248,7 +269,7 @@
     }
 
     &-map {
-      padding: 80px 0 100px;
+      padding: 80px 0 50px;
     }
 
     &-contact {

@@ -19,15 +19,16 @@ $(document).ready(function () {
       paused: true
     })
     .to('.anim__logo', 0.6, {
-      transform: '0'      
+      transform: '0',
+      margin: '0'
     })
-    .to('.anim__logo-img img', 0.6, {
+    .to('.anim__logo-img', 0.6, {
       transform: '0',        
-    }, 0
-    )
+    }, 0)
     .to(
       '.anim__logo-text', 0.4, {
-        opacity: '0',          
+        opacity: '0',
+        display: 'none'
       },
       0
     )

@@ -287,7 +287,6 @@
     font-family: Roboto, serif;
     font-weight: 300;
     letter-spacing: 0.25em;
-    margin: 10px 0 20px;
     span {
       color: $accent;
     }
@@ -306,21 +305,23 @@
 .anim {
   &__main-container {
     height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;   
+    display: flex;
+    align-items: center;
+    justify-content: center;   
   }
 
   &__logo {
-    transform: translateX(36vw) translateY(40vh) ;    
-  position: relative;    
+    transform: translateX(795px) translateY(calc(50vh - 22.5px));
+    position: relative;
   }
 
   &__logo-img {
-    position: relative;       
+    display: block;
+    position: relative;
+    transform: translate(-50%, -50%) scale(2.5);
     img {
       display: block;
-      transform: scale(2.5); 
+      margin: 0 auto;
     }
   }
 
@@ -336,8 +337,9 @@
   }
 
   &__logo-text {
-    position: absolute;
-    top: 200%;left: 0; right: 0; margin: auto;
+    transform: scale(0.5);
+    transform-origin: top center;
+    margin-top: 10px;
     display: flex; align-items: center; justify-content: center;
     flex-direction: column; white-space: nowrap;
   }

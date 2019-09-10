@@ -104,37 +104,32 @@ $(document).ready(function () {
 
     var scrollPos = $wnd.scrollTop() + headerHeight;
 
-    // добавляет клас active в ссылку меню, когда находимся на блоке, куда эта ссылка ссылается
-    $menu.find(".link").each(function () {
-      var link = $(this);
-      var id = link.find('a').attr('href');
-
-      if (id.length > 1 && id.charAt(0) == '#' && $(id).length > 0) {
-        var section = $(id);
-        var sectionTop = section.offset().top;
-
-        if (sectionTop <= scrollPos && (sectionTop + section.height()) >= scrollPos) {
-          link.addClass('active');
-        } else {
-          link.removeClass('active');
-        }
-      }
-    });
   }
 
   onscroll();
 
   // при нажатии на меню плавно скролит к соответсвующему блоку
-  $(".main-menu .link a").click(function (e) {
-    var $href = $(this).attr('href');
-    if ($href.length > 1 && $href.charAt(0) == '#' && $($href).length > 0) {
-      e.preventDefault();
-      // отнимаем высоту шапки, для того чтобы шапка не прикрывала верхнию часть блока
-      var top = $($href).offset().top - headerHeight;
-      $html.stop().animate({ scrollTop: top }, "slow", "swing");
-    }
+  const $links = $(".main-menu .link a");
+  $links.click(function (e) {
+    e.preventDefault();
+    $links.parent().removeClass('active');
+    $(this).parent().addClass('active');
+    var workCategory = $(this).attr('href').slice(1);
+    debugger;
+    showWork(workCategory);
     closeMenu();
   });
+
+  const $works = $('.work');
+  function showWork(workCategory = 'all') {
+    if (workCategory === 'all') {
+      $works.parent().removeClass('d-none');
+    } else {
+      $works.parent().addClass('d-none');
+      $works.filter(`[data-value="${workCategory}"]`).parent().removeClass('d-none');
+    }
+  }
+  showWork();
 
   $top.click(function () {
     $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
@@ -192,9 +187,9 @@ $(document).ready(function () {
     }
   });
 
-  $('ul.navigation a').each(function () {
-    if(this.href == location.href) $(this).parent().addClass('active');
-  })
+  // $('ul.navigation a').each(function () {
+  //   if(this.href == location.href) $(this).parent().addClass('active');
+  // })
 
   $('.burger-menu__btn').click(function(e) {
     e.preventDefault();

@@ -1,5 +1,3 @@
-
-
 $(document).ready(function () {
 
   var $wnd = $(window);
@@ -105,7 +103,7 @@ $(document).ready(function () {
 
   onscroll();
 
-  // при нажатии на меню плавно скролит к соответсвующему блоку
+  
   const $links = $(".main-menu .link a");
   $links.click(function (e) {
     e.preventDefault();
@@ -117,8 +115,10 @@ $(document).ready(function () {
     scrollToWorkSection();
   });
 
+  // при нажатии на меню плавно скролит к соответсвующему блоку
   function scrollToWorkSection() {
-    var top = $('.s-work').offset().top - $headerBurger.outerHeight();
+    var top = $('.s-work').offset().top - headerHeight;
+    // var top = $('.s-work').offset().top - $headerBurger.outerHeight();
     $html.stop().animate({ scrollTop: top }, "slow", "swing");
   }
 
@@ -188,10 +188,6 @@ $(document).ready(function () {
       e.preventDefault();
     }
   });
-
-  // $('ul.navigation a').each(function () {
-  //   if(this.href == location.href) $(this).parent().addClass('active');
-  // })
 
   $('.burger-menu__btn').click(function(e) {
     e.preventDefault();

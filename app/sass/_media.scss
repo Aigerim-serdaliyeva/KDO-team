@@ -329,29 +329,6 @@
     padding: 0 15px;
   }
 
-  .form {
-    &--horizontal {
-      .form {
-        &__content {
-          flex-direction: column;
-          max-width: 500px;
-        } 
-        
-        &__info {
-          max-width: 500px;
-        }
-      }
-
-      .input-div {
-        margin-right: 0;
-      }  
-    }
-
-    .input-div, .button {
-      width: 100%;
-    }
-  }
-
   .logo {
     max-width: 200px;
   }
@@ -362,13 +339,10 @@
     }
   }
 
-  .section {   
-  }
-
   .s {
 
     &-main {
-      padding: 180px 0;
+      padding: 150px 0 100px;
       img {
         max-width: 250px;
       }

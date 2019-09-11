@@ -9153,25 +9153,12 @@ h1, h2, h3, h4, h5, h6 {
             transform: translateX(270px) translateY(calc(50vh - 15px)); }
   .container {
     padding: 0 15px; }
-  .form--horizontal .form__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 500px; }
-  .form--horizontal .form__info {
-    max-width: 500px; }
-  .form--horizontal .input-div {
-    margin-right: 0; }
-  .form .input-div, .form .button {
-    width: 100%; }
   .logo {
     max-width: 200px; }
   .header .grow {
     display: block; }
   .s-main {
-    padding: 180px 0; }
+    padding: 150px 0 100px; }
     .s-main img {
       max-width: 250px; }
   .s-brif__title {

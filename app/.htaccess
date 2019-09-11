@@ -1,3 +1,5 @@
+RewriteCond %{SERVER_PORT} !^443$ 
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [QSA,R=301,L]
 #remove html file extension-e.g. https://example.com/file.html will become https://example.com/file
 RewriteEngine on 
 RewriteCond %{REQUEST_FILENAME} !-d

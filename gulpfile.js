@@ -44,7 +44,6 @@ gulp.task('libs-css', function () {
     'node_modules/hamburgers/dist/hamburgers.min.css',
     'node_modules/font-awesome/css/font-awesome.min.css',
     'node_modules/animate.css/animate.min.css',
-    'node_modules/wowjs/css/libs/animate.css'
   ])
   .pipe(cleancss({level: { 1: { specialComments: 0 } } })) // Опционально, закомментировать при отладке
   .pipe(concat('libs.min.css'))
@@ -72,7 +71,10 @@ gulp.task('libs-js', function () {
    'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js',
    'node_modules/owl.carousel/dist/owl.carousel.min.js',
    'node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
-   'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js'   
+   'node_modules/scrollmagic/scrollmagic/minified/ScrollMagic.min.js',
+  //  'node_modules/vue/dist/vue.js',
+    'node_modules/vue/dist/vue.min.js',
+    'node_modules/vue-i18n/dist/vue-i18n.min.js'   
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify()) // Минимизировать весь js (на выбор)

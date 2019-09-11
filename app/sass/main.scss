@@ -74,6 +74,24 @@
     top: 0; left: 0;
   }
 
+  &__main {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  &__language {
+    text-align: right;
+    margin-bottom: 20px;
+    a {
+      cursor: pointer;
+      &.active, &:hover {
+        color: $accent !important;
+        border-bottom: 1px solid $accent;
+      }
+    }
+  }
+
   &-burger {
     padding: 30px 0;
     position: fixed;
@@ -202,7 +220,7 @@
 .main-menu {  
   max-width: 901px;
   width: 100%; 
-  padding: 40px 0 10px;
+  // padding: 0px 0 10px;
   ul {
     list-style: none;
     display: flex;
@@ -212,9 +230,12 @@
   }
 
   li {
+    margin-right: 10px;
+    &:last-child {
+      margin-right: 0;
+    }
 
     &.link a:hover, &.active a {
-      // border-bottom: 1px solid $accent;
       background: $accent;
       border-radius: 53px;
       color: #000 !important;
@@ -227,10 +248,9 @@
     color:  #2D2D2D;
     text-decoration: none;
     font-weight: normal;
-    border-bottom: 1px solid transparent;   
     font-size: 18px;
     line-height: 25px; 
-    padding: 6px 18px;
+    padding: 6px 0px;
     min-width: 146px;
     text-align: center;
     &.inverse {

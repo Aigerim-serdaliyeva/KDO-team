@@ -20,6 +20,8 @@
     "owl.carousel": "^2.3.4",
     "remodal": "^1.1.1",
     "scrollmagic": "^2.0.7",
+    "vue": "^2.6.10",
+    "vue-i18n": "^8.14.0",
     "wowjs": "^1.1.3"
   },
   "devDependencies": {

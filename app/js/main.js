@@ -103,6 +103,11 @@ $(document).ready(function () {
 
   onscroll();
 
+  const $langs = $('.lang');
+  $('.lang').click(function() {
+    $(this).addClass('active').siblings().removeClass('active');
+  })
+
   
   const $links = $(".main-menu .link a");
   $links.click(function (e) {
@@ -118,7 +123,6 @@ $(document).ready(function () {
   // при нажатии на меню плавно скролит к соответсвующему блоку
   function scrollToWorkSection() {
     var top = $('.s-work').offset().top - headerHeight;
-    // var top = $('.s-work').offset().top - $headerBurger.outerHeight();
     $html.stop().animate({ scrollTop: top }, "slow", "swing");
   }
 
@@ -314,3 +318,21 @@ function parseGET(url) {
 
   return (GET);
 };
+
+// Internalization
+      
+const i18n = new VueI18n({
+  locale: 'ru', // set locale
+  messages, // set locale messages
+})      
+
+new Vue({ 
+  el: '#app',
+  i18n,
+  methods: {
+    changeLang(lang) {
+      this.$root.$i18n.locale = lang  
+    }
+  }      
+})
+// Internalization end

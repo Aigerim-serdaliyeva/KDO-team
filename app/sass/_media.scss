@@ -84,6 +84,9 @@
     &__title {
       font-size: 14px;
     }
+    &__language {
+      margin-bottom: 15px;
+    }
   }
 
   .main-menu {
@@ -138,6 +141,12 @@
     &__title {
       font-size: 12px;
     }
+    &__main {
+      padding: 0;
+    }
+    &__language {
+      margin-bottom: 5px;
+    }
     .logo {
       img {
         max-width: 80px;
@@ -153,7 +162,6 @@
 
   .main-menu {
     max-width: 600px;
-    padding: 20px 0 0;
     ul {
       li {
         a {

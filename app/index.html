@@ -22,7 +22,7 @@
 
 <body id="main-page">
 
-  <div class="page-wrapper">
+  <div id="app" class="page-wrapper">
 
     <div class="header-burger">
       <div class="container">
@@ -67,9 +67,9 @@
                                       
                   <div class="anim__header-text">
                       <h1 class="header__title inverse" data-wow-duration="2s" >
-                          <span>UI/UX Дизайн</span>
-                          <span>Разработка Web-сервисов</span>
-                          <span>Разработка мобильных игр и приложений</span>
+                          <span>{{ $t("header.title1") }}</span>
+                          <span>{{ $t("header.title2") }}</span>
+                          <span>{{ $t("header.title3") }}</span>
                         </h1>
                   </div>                    
                 </div>
@@ -79,27 +79,33 @@
 
           <div class="grow"></div>
 
-          <nav class="main-menu inverse">
-            <div class="container">
-              <ul class="navigation anim__navigation">
-                <li class="link active">
-                  <a href="#all" class="inverse">Все проекты</a>
-                </li>
-                <li class="link">
-                  <a href="#game" class="inverse">Игры</a>
-                </li>
-                <li class="link">
-                  <a href="#app" class="inverse">Приложения</a>
-                </li>
-                <li class="link">
-                  <a href="#service" class="inverse">Веб-сервисы</a>
-                </li>
-                <li class="link">
-                  <a href="#site" class="inverse">Сайты</a>
-                </li>
-              </ul>
+          <div class="header__main anim__navigation">
+            <div class="header__language inverse">
+              <a @click.prevent="changeLang('ru')" class="lang active">RU</a>
+              <a @click.prevent="changeLang('en')" class="lang">EN</a>                        
             </div>
-          </nav>
+            <nav class="main-menu inverse">
+              <div class="container">
+                <ul class="navigation ">
+                  <li class="link active">
+                    <a href="#all" class="inverse">{{ $t("menu.all") }}</a>
+                  </li>
+                  <li class="link">
+                    <a href="#game" class="inverse">{{ $t("menu.game") }}</a>
+                  </li>
+                  <li class="link">
+                    <a href="#app" class="inverse">{{ $t("menu.app") }}</a>
+                  </li>
+                  <li class="link">
+                    <a href="#service" class="inverse">{{ $t("menu.service") }}</a>
+                  </li>
+                  <li class="link">
+                    <a href="#site" class="inverse">{{ $t("menu.site") }}</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
 
           <div class="header__footer inverse">
             <div class="header__footer__links">
@@ -138,7 +144,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-muratov.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>MURATOV</span> PARTNERS</div>
-                <div class="work__text">Корпоративный сайт для юридической компании</div>
+                <div class="work__text">{{ $t("work.textMurPart") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://muratov.kz/" target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -151,7 +157,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-bbh.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>BLACKBERRY</span> HILLS</div>
-                <div class="work__text">Сайт для жилого комплекса таунхаусов в горах города Алматы</div>
+                <div class="work__text">{{ $t("work.textbbh") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://bbhills.kz/" target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -164,7 +170,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-profrem.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>PROF</span>REM</div>
-                <div class="work__text">Сайт для центра профессионального ремонта</div>
+                <div class="work__text">{{ $t("work.textProfRem") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://profrem.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -177,7 +183,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-proflegal.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>PROF LEGAL </span> COMMUNITY</div>
-                <div class="work__text">Сайт для палаты юридических консультантов</div>
+                <div class="work__text">{{ $t("work.textProfLegal") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://proflegal.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -190,7 +196,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-topSecTracker1.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>TOP SECURITY </span> TRACKER</div>
-                <div class="work__text">Сайт мобильной тревожной кнопки</div>
+                <div class="work__text">{{ $t("work.textTSTrack") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://tracker.topsecurity.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -203,7 +209,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-topSecPromo.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>TOP </span>SECURITY</div>
-                <div class="work__text">Сайт для компании предоставляющей услуги охраны</div>
+                <div class="work__text">{{ $t("work.textTS") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://promo.topsecurity.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -216,7 +222,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-topSecApp.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>TOP </span> SIGNAL</div>
-                <div class="work__text">Лендинг для приложения мобильная кнопка</div>
+                <div class="work__text">{{ $t("work.textTopSignal") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://app.topsecurity.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -229,7 +235,7 @@
               <div class="work__img"><img src="./img/work-newstate.jpg" alt=""></div>
               <div class="work__block">
                 <div class="work__title"><span>NEW </span> ESTATE</div>
-                <div class="work__text">Корпоративный сайт строительной компании</div>
+                <div class="work__text">{{ $t("work.textNewEstate") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://newestate.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -242,7 +248,7 @@
               <div class="work__img"><img src="./img/work-topSecService.jpg" alt=""></div>
               <div class="work__block">
                 <div class="work__title"><span>TOP SECURITY </span> KZ</div>
-                <div class="work__text">Корпоративный сайт для компании “TOP Security KZ” (Охранная компания)</div>
+                <div class="work__text">{{ $t("work.textTSKZ") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://topsecurity.kz/services"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -255,7 +261,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-altynbulak.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>altyn </span> bulak</div>
-                <div class="work__text">Сайт для Жилого комплекса в городе Алматы</div>
+                <div class="work__text">{{ $t("work.textAltynBulak") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://www.altynbulak.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -268,7 +274,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-topSecTracker.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>TOP SECURITY </span>TRACKER</div>
-                <div class="work__text">Редизайн сайта мобильной тревожной кнопки</div>
+                <div class="work__text">{{ $t("work.textTSTrack2") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://tracker.topsecurity.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -281,7 +287,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-zhagalau.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>zhag</span>alau</div>
-                <div class="work__text">Сайт для Жилого комплекса в городе Алматы</div>
+                <div class="work__text">{{ $t("work.textZhagalau") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://zhagalau.kz"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -294,7 +300,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-kausar.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>kau</span>sar</div>
-                <div class="work__text">Сайт для Жилого комплекса в городе Алматы</div>
+                <div class="work__text">{{ $t("work.textKausar") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://kausar.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -307,7 +313,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-pesthunter.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>PEST </span> HUNTER</div>
-                <div class="work__text">Сайт для компании по дизенсекции и борьбы с вредителями</div>
+                <div class="work__text">{{ $t("work.textPestHunter") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://pesthunter.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -320,7 +326,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-cleaning.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>cleaning </span> master</div>
-                <div class="work__text">Сайт для клининговой компании</div>
+                <div class="work__text">{{ $t("work.textCleaningMaster") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://cleaningmaster.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -333,7 +339,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-muratovMarket.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>muratov </span> market</div>
-                <div class="work__text">Интернет магазин для социального магазина</div>
+                <div class="work__text">{{ $t("work.textMuratovMarket") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://market.muratov.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -346,7 +352,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-muratovStamp.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>muratov </span> stamp</div>
-                <div class="work__text">Сайт для компании изаготавливающей печати</div>
+                <div class="work__text">{{ $t("work.textMuratovStamp") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://stamp.muratov.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -359,7 +365,7 @@
               <div class="work__img"><img src="./img/work-irishCoffee.jpg" alt=""></div>
               <div class="work__block">
                 <div class="work__title"><span>irish </span> coffee</div>
-                <div class="work__text">Сайт визитка для сети коффейнь в городе Алматы</div>
+                <div class="work__text">{{ $t("work.textIrishCoffee") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://irishcoffee.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -372,7 +378,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-ladySecrets.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>lady’s </span> secrets</div>
-                <div class="work__text">Лендинг для эксклюзивной женской студии красоты</div>
+                <div class="work__text">{{ $t("work.textLadySecrets") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://ladyssecrets.kz/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -385,7 +391,7 @@
               <div class="work__img"><div class="work__img__content"><img src="./img/work-nedvijka.jpg" alt=""></div></div>
               <div class="work__block">
                 <div class="work__title"><span>NE</span>DVIJKA</div>
-                <div class="work__text">Сайт для риелторской компании</div>
+                <div class="work__text">{{ $t("work.textNedvijka") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://nedvijka.kz/#/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -398,7 +404,7 @@
               <div class="work__img"><img src="./img/work-pmg.jpg" alt=""></div>
               <div class="work__block">
                 <div class="work__title"><span>project </span> management group</div>
-                <div class="work__text">Сайт для инвестиционной компании</div>
+                <div class="work__text">{{ $t("work.textPMG") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="http://pmginvest.com/"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -411,7 +417,7 @@
               <div class="work__img"><img src="./img/work-topSecApp2.jpg" alt=""></div>
               <div class="work__block">
                 <div class="work__title"><span>top </span> security app</div>
-                <div class="work__text">Мобильное приложение, тревожная кнопка ‘’TOP Security’’</div>
+                <div class="work__text">{{ $t("work.textTSApp") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://apps.apple.com/kz/app/top-security-kz/id1437243271"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -424,7 +430,7 @@
               <div class="work__img"><img src="./img/work-speedReadApp.jpg" alt=""></div>
               <div class="work__block">
                 <div class="work__title"><span>speed </span> read app</div>
-                <div class="work__text">Развивающая игра, скорочтение, на IOS и Android.</div>
+                <div class="work__text">{{ $t("work.textSpeedReadApp") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href=""  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -437,7 +443,7 @@
               <div class="work__img"><img src="./img/work-boomBrains.jpg" alt=""></div>
               <div class="work__block">
                 <div class="work__title"><span>boom </span>brains</div>
-                <div class="work__text">Развивающая игра, на IOS и Android.</div>
+                <div class="work__text">{{ $t("work.textBoomBrains") }}</div>
                 <div class="work__footer">
                   <div class="work__data">09.<span>19</span></div>
                   <a href="https://apps.apple.com/us/app/boom-brains/id1478261533"  target="_blank" class="work__site"><img src="./img/arrow-website.png" alt=""></a>
@@ -451,7 +457,7 @@
 
     <section class="s-brif">
       <div class="s-brif__content">
-        <a class="s-brif__title" target="_blank" href="http://brief.kdo.one/">Заполнить бриф <img src="./img/brif.png"></a>
+        <a class="s-brif__title" target="_blank" href="http://brief.kdo.one/">{{ $t("brif.title") }}<img src="./img/brif.png"></a>
       </div>
     </section>
 
@@ -476,16 +482,16 @@
           <div class="col-lg-9">              
             <div class="s-contact__content">
               <div class="contact">
-                <div class="contact__title">Контакты</div>
+                <div class="contact__title">{{ $t("contact.contact") }}</div>
                 <div class="contact__text"><img src="./img/phone.png" alt=""><a href="tel:+77012570030" class="text-phone" id="phone_number">+7(701) 257-00-30</a></div>
                 <div class="contact__text contact__text--email">Email: <a href="mailto:support@kdo.one">support@kdo.one</a></div>
               </div>
               <div class="contact">
-                <div class="contact__title">Адрес</div>
-                <div class="contact__text"><img src="./img/address.png" alt="">г. Алматы ул. Шевченко 153/1</div>
+                <div class="contact__title">{{ $t("contact.address") }}</div>
+                <div class="contact__text"><img src="./img/address.png" alt="">{{ $t("contact.addressStreet") }}</div>
               </div>
               <div class="contact">
-                <div class="contact__title">Соцсети</div>
+                <div class="contact__title">{{ $t("contact.social") }}</div>
                 <div class="contact__text"><img src="./img/telegram.png" alt=""><a target="_blank" href="https://t.me/kdo_team">kdo_team</a></div>
                 <div class="contact__text"><img src="./img/instagram.png" alt=""><a target="_blank" href="https://www.instagram.com/kdo_team/">kdo_team</a></div>
               </div>
@@ -498,6 +504,7 @@
   </div>
   
   <script src="./js/libs.min.js"></script>
+  <script src="./js/localization.js"></script>
   <script src="./js/main.min.js"></script>
 </body>
 

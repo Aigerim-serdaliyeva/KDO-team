@@ -9112,6 +9112,10 @@ h1, h2, h3, h4, h5, h6 {
     .header__aside {
       display: block;
       margin: 0 auto; }
+    .header__main {
+      margin: 25px auto 0; }
+    .header__language {
+      text-align: center; }
     .header .logo {
       display: block;
       margin: 0 auto;

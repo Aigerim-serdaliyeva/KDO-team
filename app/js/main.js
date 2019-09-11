@@ -212,7 +212,6 @@ $(document).ready(function () {
   
   function showMenu() {
     $header.addClass('header--opened');
-    // $header.removeClass('header--color');
     $burgerMenu.addClass('burger-menu--active');
   }
 

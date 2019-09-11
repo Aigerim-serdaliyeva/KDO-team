@@ -49,18 +49,14 @@ $(document).ready(function () {
       }, 0
     )
 
-    let toggle = true;
-    const toggleAnim = () => {
-      toggle ? backToPosition.play() : backToPosition.reverse();
-      toggle = !toggle      
-    }
+    
         
 
     const scene = new ScrollMagic.Scene({
       triggerElement: "#trigger1"
     })
     .on('progress', () => {
-      toggleAnim()
+      backToPosition.play()
     })
     // .addIndicators({name: "1 (duration: 0)"}) // add indicators (requires plugin)
     .addTo(controller);
@@ -112,13 +108,19 @@ $(document).ready(function () {
   const $links = $(".main-menu .link a");
   $links.click(function (e) {
     e.preventDefault();
+    var $href = $(this).attr('href');
+    var $workId = $(this).closest('.page-wrapper').find('.s-work');    
     $links.parent().removeClass('active');
     $(this).parent().addClass('active');
     var workCategory = $(this).attr('href').slice(1);
-    debugger;
     showWork(workCategory);
     closeMenu();
   });
+
+  function showIdWork(idWork) {
+    var top = $($href).offset().top - headerHeight;
+    $html.stop().animate({ scrollTop: top }, "slow", "swing");
+  }
 
   const $works = $('.work');
   function showWork(workCategory = 'all') {

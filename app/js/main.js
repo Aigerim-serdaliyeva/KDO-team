@@ -230,7 +230,7 @@ $(document).ready(function () {
     $(this).find('.work__img__content').stop();
   })
 
-  const spp = 4; // 1000ms / 100px
+  const spp = 8; // 1000ms / 100px
 
   $('.work').mouseenter( function() {
     const $workImg = $(this).find('.work__img');

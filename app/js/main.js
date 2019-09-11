@@ -6,7 +6,6 @@ $(document).ready(function () {
   var $header = $(".header");
   var $headerBurger = $(".header-burger");
   const $burgerMenu = $('.burger-menu');
-  var $menu = $(".main-menu");
   var headerHeight = 170;
 
   // *** Animation of logo
@@ -47,9 +46,6 @@ $(document).ready(function () {
         height: '30vh'
       }, 0
     )
-
-    
-        
 
     const scene = new ScrollMagic.Scene({
       triggerElement: "#trigger1"
@@ -103,11 +99,9 @@ $(document).ready(function () {
 
   onscroll();
 
-  const $langs = $('.lang');
   $('.lang').click(function() {
     $(this).addClass('active').siblings().removeClass('active');
   })
-
   
   const $links = $(".main-menu .link a");
   $links.click(function (e) {

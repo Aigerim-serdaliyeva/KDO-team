@@ -6,6 +6,7 @@ $(document).ready(function () {
   var $top = $(".page-top");
   var $html = $("html, body");
   var $header = $(".header");
+  var $headerBurger = $(".header-burger");
   const $burgerMenu = $('.burger-menu');
   var $menu = $(".main-menu");
   var headerHeight = 170;
@@ -108,17 +109,16 @@ $(document).ready(function () {
   const $links = $(".main-menu .link a");
   $links.click(function (e) {
     e.preventDefault();
-    var $href = $(this).attr('href');
-    var $workId = $(this).closest('.page-wrapper').find('.s-work');    
     $links.parent().removeClass('active');
     $(this).parent().addClass('active');
     var workCategory = $(this).attr('href').slice(1);
     showWork(workCategory);
     closeMenu();
+    scrollToWorkSection();
   });
 
-  function showIdWork(idWork) {
-    var top = $($href).offset().top - headerHeight;
+  function scrollToWorkSection() {
+    var top = $('.s-work').offset().top - $headerBurger.outerHeight();
     $html.stop().animate({ scrollTop: top }, "slow", "swing");
   }
 

@@ -130,6 +130,11 @@
     text-align: right;
     margin-bottom: 20px;
     border-left: 2px solid $accent;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0 15px 0 6px;
     &--mobile {
       display: none;
@@ -272,8 +277,8 @@
 }
 
 .main-menu {  
-  max-width: 901px;
-  width: 100%; 
+  // max-width: 901px;
+  // width: 100%; 
   padding: 45px 0 0;
   ul {
     list-style: none;
@@ -284,7 +289,7 @@
   }
 
   li {
-    margin-right: 10px;
+    margin-right: 20px;
     &:last-child {
       margin-right: 0;
     }
@@ -425,7 +430,7 @@
     &__img {        
       transition: all .3s;
       position: relative;      
-      height: 596px;
+      height: 590px;
 
       &__content {
         position: absolute;

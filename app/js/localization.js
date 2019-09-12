@@ -51,7 +51,8 @@ const messages = {
       contact: 'Contacts',
       address: 'Address',
       social: 'Social media',
-      addressStreet: 'Almaty, Shevchenko str 153/1'
+      addressCountry: 'Kazakhstan, Almaty, ',
+      addressStreet: 'Shevchenko str 153/1'
     }
   },
 
@@ -106,7 +107,8 @@ const messages = {
       contact: 'Контакты',
       address: 'Адрес',
       social: 'Соцсети',
-      addressStreet: 'г. Алматы ул. Шевченко 153/1'
+      addressCountry: 'Казахстан, г. Алматы, ',
+      addressStreet: 'ул. Шевченко 153/1'
     }
   },  
 

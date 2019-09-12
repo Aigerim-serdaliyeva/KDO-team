@@ -8529,6 +8529,24 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
     margin-bottom: 20px;
     border-left: 2px solid #FFCC00;
+    height: 60px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 15px 0 6px; }
     .header__language--mobile {
       display: none; }
@@ -8637,8 +8655,6 @@ h1, h2, h3, h4, h5, h6 {
       top: 8px; }
 
 .main-menu {
-  max-width: 901px;
-  width: 100%;
   padding: 45px 0 0; }
   .main-menu ul {
     list-style: none;
@@ -8653,7 +8669,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0; }
   .main-menu li {
-    margin-right: 10px; }
+    margin-right: 20px; }
     .main-menu li:last-child {
       margin-right: 0; }
     .main-menu li.link a:hover, .main-menu li.active a {
@@ -8768,7 +8784,7 @@ h1, h2, h3, h4, h5, h6 {
       -o-transition: all .3s;
       transition: all .3s;
       position: relative;
-      height: 596px; }
+      height: 590px; }
       .s-work .work__img__content {
         position: absolute;
         top: 0; }
@@ -9050,7 +9066,8 @@ h1, h2, h3, h4, h5, h6 {
   .header__main {
     padding: 0; }
   .header__language {
-    margin: 0 10px 0 5px; }
+    margin: 0 10px 0 5px;
+    height: 50px; }
     .header__language a {
       padding: 1px 0 1px 3px; }
   .header .logo img {
@@ -9111,7 +9128,8 @@ h1, h2, h3, h4, h5, h6 {
     .header__language {
       border-left: none;
       text-align: center;
-      margin: 15px auto; }
+      margin: 15px auto;
+      height: auto; }
       .header__language--mobile {
         display: block; }
         .header__language--mobile a {
@@ -9146,7 +9164,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     text-align: left;
-    margin-left: 0;
+    margin: 0 auto;
     z-index: 98;
     padding: 10px 0; }
     .main-menu ul {

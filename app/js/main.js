@@ -31,7 +31,12 @@ $(document).ready(function () {
       0
     )
     .to(
-      '.anim__header-text .header__title', 0.4, {
+      '.anim__header-text .header__language',  0.2, {
+        transform: '0'
+      }
+    )  
+    .to(
+      '.anim__header-text .header__title',  0.4, {
         transform: '0'
       }
     )    

@@ -66,11 +66,16 @@
                   </div>
                                       
                   <div class="anim__header-text">
+                      <div class="header__language inverse">
+                        <a @click.prevent="changeLang('kz')" class="lang">KZ</a>
+                        <a @click.prevent="changeLang('ru')" class="lang">RU</a>
+                        <a @click.prevent="changeLang('en')" class="lang active">EN</a>                        
+                      </div>
                       <h1 class="header__title inverse" data-wow-duration="2s" >
-                          <span>{{ $t("header.title1") }}</span>
-                          <span>{{ $t("header.title2") }}</span>
-                          <span>{{ $t("header.title3") }}</span>
-                        </h1>
+                        <span>{{ $t("header.title1") }}</span>
+                        <span>{{ $t("header.title2") }}</span>
+                        <span>{{ $t("header.title3") }}</span>
+                      </h1>
                   </div>                    
                 </div>
                
@@ -79,33 +84,33 @@
 
           <div class="grow"></div>
 
-          <div class="header__main anim__navigation">
-            <div class="header__language inverse">
-              <a @click.prevent="changeLang('ru')" class="lang active">RU</a>
-              <a @click.prevent="changeLang('en')" class="lang">EN</a>                        
-            </div>
-            <nav class="main-menu inverse">
-              <div class="container">
-                <ul class="navigation ">
-                  <li class="link active">
-                    <a href="#all" class="inverse">{{ $t("menu.all") }}</a>
-                  </li>
-                  <li class="link">
-                    <a href="#game" class="inverse">{{ $t("menu.game") }}</a>
-                  </li>
-                  <li class="link">
-                    <a href="#app" class="inverse">{{ $t("menu.app") }}</a>
-                  </li>
-                  <li class="link">
-                    <a href="#service" class="inverse">{{ $t("menu.service") }}</a>
-                  </li>
-                  <li class="link">
-                    <a href="#site" class="inverse">{{ $t("menu.site") }}</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+          <div class="header__language header__language--mobile inverse">
+            <a @click.prevent="changeLang('kz')" class="lang">KZ</a>
+            <a @click.prevent="changeLang('ru')" class="lang">RU</a>
+            <a @click.prevent="changeLang('en')" class="lang active">EN</a>                        
           </div>
+          
+          <nav class="main-menu anim__navigation inverse">
+            <div class="container">
+              <ul class="navigation ">
+                <li class="link active">
+                  <a href="#all" class="inverse">{{ $t("menu.all") }}</a>
+                </li>
+                <li class="link">
+                  <a href="#game" class="inverse">{{ $t("menu.game") }}</a>
+                </li>
+                <li class="link">
+                  <a href="#app" class="inverse">{{ $t("menu.app") }}</a>
+                </li>
+                <li class="link">
+                  <a href="#service" class="inverse">{{ $t("menu.service") }}</a>
+                </li>
+                <li class="link">
+                  <a href="#site" class="inverse">{{ $t("menu.site") }}</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
           <div class="header__footer inverse">
             <div class="header__footer__links">

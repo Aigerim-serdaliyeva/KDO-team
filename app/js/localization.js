@@ -1,4 +1,60 @@
 const messages = {
+
+  en: {   
+
+    header: {
+      title1: 'UI/UX Design',
+      title2: 'Web services development',
+      title3: 'Development of mobile games and applications'
+    },
+
+    menu: {
+      all: 'All projects',
+      game: 'Games',
+      app: 'Applications',
+      service: 'Web-service',
+      site: 'Websites'
+    },
+
+    work: {
+      textMurPart: 'Corporate website for a law firm',
+      textbbh: 'Site for a residential complex of townhouses in the mountains of Almaty',
+      textProfRem: 'Website for a professional repair center',
+      textProfLegal: 'Website for the Chamber of Legal Advisers',
+      textTSTrack: 'Mobile panic button site',
+      textTS: 'Website for a security company',
+      textTopSignal: 'Landing for the application mobile button',
+      textNewEstate: 'Corporate website of a construction company',
+      textTSKZ: 'Corporate website for the company “TOP Security KZ” (Security company)',
+      textAltynBulak: 'Website for the residential complex in the city of Almaty',
+      textTSTrack2: 'Redesign of a mobile panic button site',
+      textZhagalau: 'Website for the residential complex in the city of Almaty',
+      textKausar: 'Website for the residential complex in the city of Almaty',
+      textPestHunter: 'Website for a pest control and disinfection company',
+      textCleaningMaster: 'Website for a cleaning company',
+      textMuratovMarket: 'Online store for a social store',
+      textMuratovStamp: 'Website for a printing company',
+      textIrishCoffee: 'Website business card for coffee network in the city of Almaty',
+      textLadySecrets: 'Landing for an exclusive female beauty studio',
+      textNedvijka: 'Website for a real estate company',
+      textPMG: 'Website for an investment company',
+      textTSApp: 'Mobile app, panic button ‘’ TOP Security ’’',
+      textSpeedReadApp: 'Educational game, speed reading, on iOS and Android',
+      textBoomBrains: 'Educational game on iOS and Android'
+    },
+
+    brif: {
+      title: 'Make a brief '
+    },
+
+    contact: {
+      contact: 'Contacts',
+      address: 'Address',
+      social: 'Social media',
+      addressStreet: 'Almaty, Shevchenko str 153/1'
+    }
+  },
+
   ru: {   
 
     header: {
@@ -52,11 +108,7 @@ const messages = {
       social: 'Соцсети',
       addressStreet: 'г. Алматы ул. Шевченко 153/1'
     }
-  },
-
-  en: {
-     
-  },
+  },  
 
   kz: {
 

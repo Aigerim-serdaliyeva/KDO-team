@@ -8427,9 +8427,9 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   overflow: hidden; }
   .anim__header-text .header__title, .anim__header-text .header__language {
-    -webkit-transform: translateX(-150%);
-        -ms-transform: translateX(-150%);
-            transform: translateX(-150%); }
+    -webkit-transform: translateX(-160%);
+        -ms-transform: translateX(-160%);
+            transform: translateX(-160%); }
 
 .anim__logo-text {
   -webkit-transform: scale(0.5);

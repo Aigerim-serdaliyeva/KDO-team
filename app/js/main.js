@@ -320,7 +320,7 @@ function parseGET(url) {
 // Internalization
       
 const i18n = new VueI18n({
-  locale: 'ru', // set locale
+  locale: 'en', // set locale
   messages, // set locale messages
 })      
 

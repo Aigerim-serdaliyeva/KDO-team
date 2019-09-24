@@ -6,7 +6,7 @@
 @media (max-width: 1690px) {
   .anim {
     &__logo {
-      transform: translateX(670px) translateY(calc(50vh - 15px));
+      transform: translateX(670px) translateY(calc(60vh));
     }
   }
 
@@ -75,7 +75,7 @@
 @media (max-width: 1450px) {
   .anim {
     &__logo {
-      transform: translateX(570px) translateY(calc(50vh - 15px));
+      transform: translateX(570px) translateY(calc(60vh));
     }
   }
 
@@ -136,7 +136,7 @@
 @include media-breakpoint-down(lg) {
   .anim {
     &__logo {
-      transform: translateX(480px) translateY(calc(50vh - 15px));
+      transform: translateX(480px) translateY(calc(60vh));
     }
   }
 
@@ -201,7 +201,7 @@
 @include media-breakpoint-down(md) {
   .anim {
     &__logo {
-      transform: translateX(360px) translateY(calc(50vh - 15px));
+      transform: translateX(360px) translateY(calc(60vh));
     }
   }
 
@@ -356,7 +356,7 @@
 @include media-breakpoint-down(sm) {  
   .anim {
     &__logo {
-      transform: translateX(270px) translateY(calc(50vh - 15px));
+      transform: translateX(270px) translateY(calc(60vh));
     }
   }
 
@@ -458,7 +458,7 @@
 @include media-breakpoint-down(xs) {
   .anim {
     &__logo {
-      transform: translateX(270px) translateY(calc(50vh - 15px));
+      transform: translateX(270px) translateY(calc(60vh));
     }
   }
 

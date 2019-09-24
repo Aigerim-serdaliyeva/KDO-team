@@ -8308,7 +8308,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .carrow {
   display: inline-block;
-  margin-top: 50px; }
+  margin-top: 150px; }
   .carrow svg {
     width: 24px;
     height: 40px; }
@@ -8398,9 +8398,9 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: center; }
 
 .anim__logo {
-  -webkit-transform: translateX(795px) translateY(calc(50vh - 22.5px));
-      -ms-transform: translateX(795px) translateY(calc(50vh - 22.5px));
-          transform: translateX(795px) translateY(calc(50vh - 22.5px));
+  -webkit-transform: translateX(795px) translateY(calc(62vh));
+      -ms-transform: translateX(795px) translateY(calc(62vh));
+          transform: translateX(795px) translateY(calc(62vh));
   position: relative; }
 
 .anim__logo-img {
@@ -8719,11 +8719,11 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   display: none; }
   .s-main__title {
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     font-family: Roboto, serif;
     font-weight: 300;
-    letter-spacing: 0.25em; }
+    letter-spacing: 0.15em; }
     .s-main__title span {
       color: #FFCC00; }
 
@@ -8997,9 +8997,9 @@ h1, h2, h3, h4, h5, h6 {
 /*==========  Desktop First  ==========*/
 @media (max-width: 1690px) {
   .anim__logo {
-    -webkit-transform: translateX(670px) translateY(calc(50vh - 15px));
-        -ms-transform: translateX(670px) translateY(calc(50vh - 15px));
-            transform: translateX(670px) translateY(calc(50vh - 15px)); }
+    -webkit-transform: translateX(670px) translateY(calc(60vh));
+        -ms-transform: translateX(670px) translateY(calc(60vh));
+            transform: translateX(670px) translateY(calc(60vh)); }
   .header__title {
     font-size: 16px; }
   .main-menu {
@@ -9027,9 +9027,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1450px) {
   .anim__logo {
-    -webkit-transform: translateX(570px) translateY(calc(50vh - 15px));
-        -ms-transform: translateX(570px) translateY(calc(50vh - 15px));
-            transform: translateX(570px) translateY(calc(50vh - 15px)); }
+    -webkit-transform: translateX(570px) translateY(calc(60vh));
+        -ms-transform: translateX(570px) translateY(calc(60vh));
+            transform: translateX(570px) translateY(calc(60vh)); }
   .header {
     padding: 30px 0 40px; }
     .header__title {
@@ -9058,9 +9058,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1199.98px) {
   .anim__logo {
-    -webkit-transform: translateX(480px) translateY(calc(50vh - 15px));
-        -ms-transform: translateX(480px) translateY(calc(50vh - 15px));
-            transform: translateX(480px) translateY(calc(50vh - 15px)); }
+    -webkit-transform: translateX(480px) translateY(calc(60vh));
+        -ms-transform: translateX(480px) translateY(calc(60vh));
+            transform: translateX(480px) translateY(calc(60vh)); }
   .header__title {
     font-size: 12px; }
   .header__main {
@@ -9089,9 +9089,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 991.98px) {
   .anim__logo {
-    -webkit-transform: translateX(360px) translateY(calc(50vh - 15px));
-        -ms-transform: translateX(360px) translateY(calc(50vh - 15px));
-            transform: translateX(360px) translateY(calc(50vh - 15px)); }
+    -webkit-transform: translateX(360px) translateY(calc(60vh));
+        -ms-transform: translateX(360px) translateY(calc(60vh));
+            transform: translateX(360px) translateY(calc(60vh)); }
   .hamburger {
     display: block; }
   .burger-menu {
@@ -9199,9 +9199,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 767.98px) {
   .anim__logo {
-    -webkit-transform: translateX(270px) translateY(calc(50vh - 15px));
-        -ms-transform: translateX(270px) translateY(calc(50vh - 15px));
-            transform: translateX(270px) translateY(calc(50vh - 15px)); }
+    -webkit-transform: translateX(270px) translateY(calc(60vh));
+        -ms-transform: translateX(270px) translateY(calc(60vh));
+            transform: translateX(270px) translateY(calc(60vh)); }
   .container {
     padding: 0 15px; }
   .logo {
@@ -9265,9 +9265,9 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 575.98px) {
   .anim__logo {
-    -webkit-transform: translateX(270px) translateY(calc(50vh - 15px));
-        -ms-transform: translateX(270px) translateY(calc(50vh - 15px));
-            transform: translateX(270px) translateY(calc(50vh - 15px)); }
+    -webkit-transform: translateX(270px) translateY(calc(60vh));
+        -ms-transform: translateX(270px) translateY(calc(60vh));
+            transform: translateX(270px) translateY(calc(60vh)); }
   .break {
     display: inline; }
   .call-me {

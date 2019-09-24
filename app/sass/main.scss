@@ -43,7 +43,7 @@
   }
 
   &__logo {
-    transform: translateX(795px) translateY(calc(50vh - 22.5px));
+    transform: translateX(795px) translateY(calc(62vh));
     position: relative;
   }
 
@@ -361,11 +361,11 @@
   display: none;
 
   &__title {
-    font-size: 24px;
+    font-size: 18px;
     color: #fff;
     font-family: Roboto, serif;
     font-weight: 300;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.15em;
     span {
       color: $accent;
     }

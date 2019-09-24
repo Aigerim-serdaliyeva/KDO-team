@@ -99,7 +99,7 @@ $(document).ready(function () {
     }
 
     var scrollPos = $wnd.scrollTop() + headerHeight;
-
+ы
   }
 
   onscroll();
@@ -139,7 +139,6 @@ $(document).ready(function () {
   $top.click(function () {
     $html.stop().animate({ scrollTop: 0 }, 'slow', 'swing');
   });
-
 
   // при изменении объязателных полей проверяем можно ли удалять класс error
   $("input:required, textarea:required").keyup(function () {
@@ -257,12 +256,6 @@ $(document).ready(function () {
       'top': 0
     }, spp * height);
   });
-
-
-  $(".s-map__button").click( function() {
-    $(this).closest('.s-map').addClass('show-map');
-  });
-
 
 });
 

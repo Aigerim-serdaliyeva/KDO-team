@@ -99,7 +99,7 @@ $(document).ready(function () {
     }
 
     var scrollPos = $wnd.scrollTop() + headerHeight;
-ы
+
   }
 
   onscroll();

@@ -9,6 +9,10 @@
       transform: translateX(670px) translateY(calc(60vh));
     }
   }
+  
+  .carrow {
+    margin-top: 120px;
+  }
 
   .header {
     &__title {
@@ -31,7 +35,10 @@
   .s {
 
     &-main {
-      padding: 270px 0;
+      // padding: 270px 0;
+      &__title {
+        font-size: 16px;
+      }
     }
 
     &-work {
@@ -79,6 +86,10 @@
     }
   }
 
+  .carrow {
+    margin-top: 80px;
+  }
+
   .header {
     padding: 30px 0 40px;
     &__title {
@@ -107,6 +118,9 @@
   .s {
     &-main {
       padding: 250px 0;
+      // &__title {
+      //   font-size: 15px;
+      // }
     }
 
     &-work {
@@ -317,6 +331,10 @@
 
     &-main {
       display: block;
+      &__title {
+        font-size: 22px;
+        margin-top: 20px;
+      }
     }
 
     &-work {
@@ -378,6 +396,9 @@
 
     &-main {
       padding: 150px 0 100px;
+      &__title {
+        font-size: 18px;
+      }
       img {
         max-width: 250px;
       }
